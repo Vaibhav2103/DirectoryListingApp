@@ -7,7 +7,7 @@ And After Create Table for save directory name.
 
 Table Script
 
-CREATE TABLE [DBO].directory
+CREATE TABLE [DBO].[directory]
 (
   id  int not null identity(1,1) primary key clustered,
   parent_id int null  foreign key references dbo.directory(id),
